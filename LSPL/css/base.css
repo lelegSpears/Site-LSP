@@ -1,0 +1,99 @@
+body {
+  background: linear-gradient(rgb(17, 39, 80), #01010a);
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position:fixed;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;    /* altura mínima, não fixa */
+    overflow-x: hidden;  /* só esconde barra horizontal */
+    overflow-y: auto;    /* garante rolagem vertical */
+    scroll-behavior: smooth;
+}
+
+a{
+    color: rgb(236, 236, 236);
+    text-decoration: none;
+    transition: 0.8;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1d1d2b;
+    border: 1px solid black;
+    min-width: 200px;
+    min-height: 100px;
+}
+
+.lista-nav{
+    list-style: none;
+    display: flex;
+    gap: clamp(1px, 3vw, 9px);
+    overflow: hidden;
+}
+
+
+.lista-nav li{
+    font-size: clamp(1px, 3vw, 16px);
+    letter-spacing: 3px;
+    margin-left: 32px;
+    padding: 0;
+}
+
+h1{
+    position: relative;
+    top: 10%;
+    text-align: center;
+    color: rgb(247, 247, 247);
+    font-size: clamp(20px, 5vw, 50px);
+}
+
+ul {
+    flex-direction: column;
+    list-style-type: none;
+}
+li {
+    list-style-type: none;
+}
+
+#responda,
+.botao {
+  width: 200px;
+  height: 40px;
+  max-width: 90%;
+  margin: 0;
+  position: static;   /* remove o relativo com top/left */
+}
+
+input, button {
+    width: 250px;
+  height: 40px;
+  max-width: 90%;
+  margin: 0;
+  position: static;   /* remove o relativo com top/left */
+}
+
+.botao {
+    width: 300px;
+    height: 80px;
+    margin-bottom: 20px;
+    align-items: center;
+}

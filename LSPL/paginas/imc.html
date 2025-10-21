@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/responsividade.css">
+    <link rel="stylesheet" href="../css/paginas/imc.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSP Network</title>
+
+</head>
+
+<body>
+    <header>
+      <nav>
+           <a class="logo" href="../index.html" id="bao">LSP</a>
+          <ul class="lista-nav">
+             <li><a href="foto.html">Foto</a></li>
+             <li><a href="imc.html">Calcule seu IMC</a></li>
+             <li><a href="forca.html" class="ini">Forca</a></li>
+             <li><a href="jogo.html" class="ini">Jogo</a></li>
+         </ul>
+      </nav>
+    </header>
+    <main><div id="imc-container">
+        <li><input type="text" placeholder="Escolha um peso" id="peso" class="botao"></li>
+        <li><input type="text" placeholder="Escolha uma altura" id="altura" class="botao"></li>
+        <li><button onclick="conversao()" class="botao">Calcular</button></li>
+        <div id="conta"></div>
+         </div>
+    
+    </main>
+    
+</body>
+
+<script src="../js/imc.js"></script>

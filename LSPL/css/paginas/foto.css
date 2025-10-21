@@ -1,0 +1,13 @@
+.imag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* ocupa a tela inteira */
+  width: 100%;
+}
+.ceu{
+  height: 70vh;   /* 70% da altura da tela */
+  width: auto;    /* mantém proporção */
+  max-width: 80vw; /* garante que não ultrapasse a largura */
+  display: block;
+}

@@ -1,0 +1,32 @@
+#imc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* centraliza na horizontal */
+  align-items: center;      /* centraliza na vertical (se tiver altura definida) */
+  margin-top: 20px;
+  gap: 12px;
+  margin-top: 100px;
+}
+
+#imc {
+  width: 250px;
+  height: 40px;
+  max-width: 90%;
+}
+
+
+#imc {
+    width: 250px;
+  height: 40px;
+  max-width: 90%;
+  margin: 0;
+  position: static;   /* remove o relativo com top/left */
+  align-items: center;
+
+}
+
+#conta {
+    background: white;
+    width: 250px;
+    padding: 30px;
+}

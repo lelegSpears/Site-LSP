@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/responsividade.css">
+    <link rel="stylesheet" href="../css/paginas/forca.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSP Network</title>
+
+</head>
+
+<body>
+    <header>
+      <nav>
+           <a class="logo" href="../index.html" id="bao">LSP</a>
+          <ul class="lista-nav">
+             <li><a href="foto.html">Foto</a></li>
+             <li><a href="imc.html">Calcule seu IMC</a></li>
+             <li><a href="forca.html" class="ini">Forca</a></li>
+             <li><a href="jogo.html" class="ini">Jogo</a></li>
+         </ul>
+      </nav>
+    </header>
+    <main>
+        <div id="Jogo">
+             <h1 id="titulo">Forca</h1>
+             <li><div id="for"> <div id="im"></div> <h2 id="stat"></h2> <h2 id="tent"></h2> <h2 id="T"></h2><h2 id="esc"></h2> </div></li>
+             <li><form onsubmit="Res(); return false;"><input type="text" placeholder="Escolha uma letra" id="adivinhe" maxlength="1" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')"></form></li>
+             <li><button id="responda" onclick="Res()">Enviar</button></li>
+        </div>
+    </main>
+
+
+</body>
+<script src="../js/forca.js"></script>
+</html>
